@@ -5,12 +5,16 @@
     Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
   -->
 <html>
-  <head>
-    <title>People in the SERIS Research Team</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="assets/css/main.css" />
-  </head>
+<head>
+	<title>People in the SERIS Research Team</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+</head>
+
+<!-- Load JQuery -->
+<script src="assets/js/jquery.min.js"></script>
+
   <body class="is-preload">
 
     <!-- Wrapper -->
@@ -71,78 +75,8 @@
 
 
 	  </section>
-
 	</div>
       </div>
-
-      <!-- Sidebar -->
-      <div id="sidebar">
-	<div class="inner">
-
-	  <!-- Search -->
-	  <section id="search" class="alt">
-	    <form method="post" action="#">
-	      <input type="text" name="query" id="query" placeholder="Search" />
-	    </form>
-	  </section>
-
-	  <!-- Menu -->
-	  <nav id="menu">
-	    <header class="major">
-	      <h2>SERIS Team</h2>
-	    </header>
-	    <ul>
-	      <li><a href="index.html">Homepage</a></li>
-	      <li><a href="people.html">People</a></li>
-	      <li><a href="topics.html">Topics</a></li>
-	      <!---
-	      <li>
-		<span class="opener">Submenu</span>
-		<ul>
-		  <li><a href="#">Lorem Dolor</a></li>
-		  <li><a href="#">Ipsum Adipiscing</a></li>
-		  <li><a href="#">Tempus Magna</a></li>
-		  <li><a href="#">Feugiat Veroeros</a></li>
-		</ul>
-		--->
-	      </li>
-	      <li><a href="#">Publications</a></li>
-	      <li><a href="#">Stories</a></li>
-	      <!---
-	      <li>
-		<span class="opener">Another Submenu</span>
-		<ul>
-		  <li><a href="#">Lorem Dolor</a></li>
-		  <li><a href="#">Ipsum Adipiscing</a></li>
-		  <li><a href="#">Tempus Magna</a></li>
-		  <li><a href="#">Feugiat Veroeros</a></li>
-		</ul>
-	      </li>
-	      --->
-	      <li><a href="#">Alumni</a></li>
-	      <li><a href="#">Collaborators</a></li>
-	      <li><a href="#">Sponsors</a></li>
-	    </ul>
-	  </nav>
-	  <!-- Section -->
-	  <section>
-	    <header class="major">
-	      <h2>For Students</h2>
-	    </header>
-	    <div class="mini-posts">
-	      <article>
-		<a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
-		<p>For Current Members</p>
-	      </article>
-	      <article>
-		<a href="#" class="image"><img src="images/pic08.jpg" alt="" /></a>
-		<p>For Prospective Members</p>
-	      </article>
-	    </div>
-	    <ul class="actions">
-	      <li><a href="#" class="button">More</a></li>
-	    </ul>
-	  </section>
 
 	  <!-- Section -->
 	  <!---
@@ -219,31 +153,16 @@
 	  </section>
 -->
 
-	  <!-- Section -->
-	  <section>
-	    <header class="major">
-	      <h2>Contact Us</h2>
-	    </header>
-	    <p>Please share your thought:</p>
-	    <ul class="contact">
-	      <li class="icon solid fa-envelope"><a href="#">yunglu@purdue.edu</a></li>
-	      <li class="icon solid fa-phone">(765) 494-2668</li>
-	      <li class="icon solid fa-home">501 Northwestern Avenue, MSEE 222, West Lafayette, IN 47907-2035, USA.</li>
-	    </ul>
-	  </section>
+	<!-- REQUIRED DIV - HOLDS THE SIDEBAR -->
+	<div id="sidebar"></div>
+	<script type="text/javascript">
+		$sidebar = $("#sidebar");
+		$sidebar.load("sidebar.html");
+	</script>
 
-	  <!-- Footer -->
-	  <footer id="footer">
-	    <p class="copyright">Original  design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-	  </footer>
-
-	</div>
-      </div>
-
-    </div>
+</div>
 
     <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/browser.min.js"></script>
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
