@@ -12,8 +12,8 @@
 	<link rel="stylesheet" href="assets/css/main.css" />
 </head>
 
-<!-- JQuery Script Initialization -->
-<script src="assets/js/jquery.min.js" type="text/javascript"></script>
+<!-- JQuery at the top -->
+<script src="assets/js/jquery.min.js"></script>
 
 <body class="is-preload">
 	<!-- Wrapper -->
@@ -130,103 +130,26 @@
 				</article>
 			</section>
 
-			<!-- Footer -->
-			<footer id="footer">
-				<p class="copyright">Original Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-			</footer>
-
 		<!-- End of 'inner', 'main' div -->
 		</div>
 		</div>
 
-		<!-- Sidebar Container
-		<div id="sidebar-container"> -->
-      <!-- Sidebar -->
-      <div id="sidebar">
-		<div class="inner">
-	
-		  <!-- Search -->
-		  <section id="search" class="alt">
-			<form method="post" action="#">
-			  <input type="text" name="query" id="query" placeholder="Search" />
-			</form>
-		  </section>
-	
-		  <!-- Menu -->
-		  <nav id="menu">
-			<header class="major">
-			  <h2>SERIS Team</h2>
-			</header>
-			<ul>
-			  <li><a href="index.html">Homepage</a></li>
-			  <li><a href="people.html">People</a></li>
-			<ul>
-			  <li><a href="#">Advisor</a></li>
-			  <li><a href="#">Current Members</a></li>
-			  <li><a href="#">Collaborators</a></li>
-			  <li><a href="#">Alumni</a></li>
-			</ul>
-			  <li><a href="topics.html">Topics</a></li>
-			  </li>
-			  <li><a href="#">Publications</a></li>
-			  <li><a href="#">Stories</a></li>
-			  <!---
-			  <li>
-			<span class="opener">Another Submenu</span>
-			<ul>
-			  <li><a href="#">Lorem Dolor</a></li>
-			  <li><a href="#">Ipsum Adipiscing</a></li>
-			  <li><a href="#">Tempus Magna</a></li>
-			  <li><a href="#">Feugiat Veroeros</a></li>
-			</ul>
-			  </li>
-			  --->
-			  <li><a href="#">Sponsors</a></li>
-			</ul>
-		  </nav>
-		  <!-- Section -->
-		  <section>
-			<header class="major">
-			  <h2>For Students</h2>
-			</header>
-			<div class="mini-posts">
-			  <article>
-			<a href="#" class="image"><img src="images/pic07.jpg" alt="" /></a>
-			<p>For Current Members</p>
-			  </article>
-			  <article>
-			<a href="#" class="image"><img src="images/pic08.jpg" alt="" /></a>
-			<p>For Prospective Members</p>
-			  </article>
-			</div>
-			<ul class="actions">
-			  <li><a href="#" class="button">More</a></li>
-			</ul>
-		  </section>
-	
-		  <!-- Section -->
-		  <section>
-			<header class="major">
-			  <h2>Contact Us</h2>
-			</header>
-			<p>Please share your thought:</p>
-			<ul class="contact">
-			  <li class="icon solid fa-envelope"><a href="#">yunglu@purdue.edu</a></li>
-			  <li class="icon solid fa-phone">(765) 494-2668</li>
-			  <li class="icon solid fa-home">501 Northwestern Avenue, MSEE 222, West Lafayette, IN 47907-2035, USA.</li>
-			</ul>
-		  </section>
-		</div>
-
-		<!-- Update Sidebar Contents!
+		<!-- REQUIRED DIV - HOLDS THE SIDEBAR -->
+		<div id="sidebar"></div>
 		<script type="text/javascript">
-			$("#sidebar-container").load("sidebar.html #sidebar", function(resp, stat, xmlhttp){
-
-			});
-			//$(window).trigger("resize");
-		</script> -->
+			$sidebar = $("#sidebar")
+			// Load sidebar.html into the container
+			$sidebar.load("sidebar.html", function(){ ; });
+		</script>
 
 	<!-- End of 'wrapper' divs -->
 	</div>
 </body>
+
+<!-- Scripts -->
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+
 </html>
