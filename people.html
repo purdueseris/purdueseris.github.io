@@ -10,18 +10,21 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
-</head>
 
-<!-- Load JQuery -->
-<script src="assets/js/jquery.min.js"></script>
+	<!-- Load JQuery -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+</head>
 
   <body class="is-preload">
 
     <!-- Wrapper -->
     <div id="wrapper">
 
-      <!-- Main -->
-      <div id="main">
+    <!-- Main -->
+    <div id="main">
 	<div class="inner">
 
 	  <!-- Header -->
@@ -32,8 +35,8 @@
 	    </ul>
 	  </header>
 
-	  <!-- Content -->
-	  <section>
+	<!-- Content -->
+	<section>
 	    <header class="main">
 	      <h1>People</h1>
 	    </header>
@@ -48,7 +51,7 @@
 	    <h2>Collaborators</h2>
 	    <p></p>
 
-   <section>
+   	<section>
 	  <h3>James Davis</h3>
       <a href="#" class="image"><img src="https://davisjam.github.io/images/JamesDavis.jpg" alt="" width="400" data-position="top center" /></a>
       <div class="content">
@@ -56,9 +59,9 @@
 	  <p>James is an assistant professor at Purdue University.</p>
 	</div>
       </div>
-    </section>
+	</section>
 
-      <section>
+	<section>
 	  <h3>George K. Thiruvathukal</h3>
       <a href="#" class="image"><img src="https://media.licdn.com/dms/image/D5603AQF5yWrCIRIbgg/profile-displayphoto-shrink_800_800/0/1684515421318?e=2147483647&v=beta&t=SmHr98irvnd7yvl7fKz3UQYdqVNsS7jCTjlJAn_N-UM" width="400"  alt="" data-position="top center" /></a>
       <div class="content">
@@ -68,15 +71,15 @@
       </div>
     </section>
 
-	    <hr class="major" />
+	<hr class="major" />
 
-	    <h2>Alumni</h2>
-	    <p></p>
+	<h2>Alumni</h2>
+	<p></p>
 
 
-	  </section>
+	</section>
 	</div>
-      </div>
+    </div>
 
 	  <!-- Section -->
 	  <!---
@@ -158,15 +161,15 @@
 	<script type="text/javascript">
 		$sidebar = $("#sidebar");
 		$sidebar.load("sidebar.html");
+		$.getScript('assets/js/main.js', function(){
+				;
+			});
 	</script>
 
-</div>
+	</div>
 
     <!-- Scripts -->
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
 
-  </body>
+</body>
 </html>

@@ -10,10 +10,14 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
+	<!-- Load JQuery -->
+	<script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
 </head>
 
-<!-- Load JQuery -->
-<script src="assets/js/jquery.min.js"></script>
+
 
   <body class="is-preload">
 
@@ -93,14 +97,14 @@
 	<script type="text/javascript">
 		$sidebar = $("#sidebar");
 		$sidebar.load("sidebar.html");
+		$.getScript('assets/js/main.js', function(){
+				;
+			});
 	</script>
 
     </div>
 
-    <!-- Scripts -->
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
+	<!-- Load JQuery -->
     <script src="assets/js/main.js"></script>
 
 </body>

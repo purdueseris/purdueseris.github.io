@@ -10,10 +10,15 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
+
+	<!-- JQuery at the top -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+
 </head>
 
-<!-- JQuery at the top -->
-<script src="assets/js/jquery.min.js"></script>
 
 <body class="is-preload">
 	<!-- Wrapper -->
@@ -139,15 +144,16 @@
 		<script type="text/javascript">
 			$sidebar = $("#sidebar");
 			$sidebar.load("sidebar.html");
+			$.getScript('assets/js/main.js', function(){
+				;
+			});
 		</script>
 
 	<!-- End of 'wrapper' divs -->
 	</div>
 	
 	<!-- Scripts -->
-	<script src="assets/js/browser.min.js"></script>
-	<script src="assets/js/breakpoints.min.js"></script>
-	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
+
 </body>
 </html>
