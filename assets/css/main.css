@@ -3095,3 +3095,14 @@ button:disabled,
   margin-top: 0;
   padding-top: 0;
 }
+
+
+.people-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  margin-bottom: -5%;
+}
+
+.people-sublist {
+  list-style: none;
+}
