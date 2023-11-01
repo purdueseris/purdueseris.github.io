@@ -3106,3 +3106,13 @@ button:disabled,
 .people-sublist {
   list-style: none;
 }
+
+.people-prof {
+  display: flex;
+  justify-content: center;
+}
+
+.advisor-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
